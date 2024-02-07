@@ -1,6 +1,5 @@
 package com.alexq66.springcoredemo;
 
-
 import org.springframework.stereotype.Component;
 
 /**
