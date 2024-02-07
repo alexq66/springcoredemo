@@ -14,21 +14,21 @@ public class DemoController {
 
     private CoachInterface myCoach;
 
-//Constructor Injection Method - included as an example
- /**
-  * @Autowired
+//Constructor Injection Method
+//This method is the preferred Injection method and is required when there are required dependencies.
+    @Autowired
     public DemoController(CoachInterface theCoach) {
         myCoach = theCoach;
     }
- */
 
- //Setter Injection Method
 
+ //Setter Injection Method - this method is used when there are optional dependencies.
+/*
     @Autowired
     public void setMyCoach(CoachInterface theCoach){
         myCoach = theCoach;
     }
-
+*/
     @GetMapping("/dailyworkout")
     public String getDailyWorkout() {
         return myCoach.getDailyWorkout();
