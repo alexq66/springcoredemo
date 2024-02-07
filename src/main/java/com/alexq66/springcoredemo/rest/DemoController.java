@@ -2,7 +2,6 @@ package com.alexq66.springcoredemo.rest;
 
 import com.alexq66.springcoredemo.common.CoachInterface;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,7 +17,7 @@ public class DemoController {
 //Constructor Injection Method
 //This method is the preferred Injection method and is required when there are required dependencies.
     @Autowired
-    public DemoController(@Qualifier("cricketCoach") CoachInterface theCoach) {
+    public DemoController(CoachInterface theCoach) {
         myCoach = theCoach;
     }
 
