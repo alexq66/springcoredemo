@@ -1,5 +1,6 @@
-package com.alexq66.springcoredemo;
+package com.alexq66.springcoredemo.rest;
 
+import com.alexq66.springcoredemo.common.CoachInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

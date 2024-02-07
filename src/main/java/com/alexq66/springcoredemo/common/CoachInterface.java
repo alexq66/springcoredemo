@@ -1,4 +1,4 @@
-package com.alexq66.springcoredemo;
+package com.alexq66.springcoredemo.common;
 
 /**
  * Created by Kenneth Quinn on 2/7/2024
