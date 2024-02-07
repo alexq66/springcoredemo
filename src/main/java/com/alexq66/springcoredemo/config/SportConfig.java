@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SportConfig {
 
-    @Bean
+    @Bean("aquatic")
     public CoachInterface swimCoach() {
         return new SwimCoach();
     }

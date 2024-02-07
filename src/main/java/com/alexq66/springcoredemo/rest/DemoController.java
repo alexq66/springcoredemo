@@ -18,7 +18,7 @@ public class DemoController {
 //Constructor Injection Method
 //This method is the preferred Injection method and is required when there are required dependencies.
     @Autowired
-    public DemoController(@Qualifier("swimCoach") CoachInterface theCoach) {
+    public DemoController(@Qualifier("aquatic") CoachInterface theCoach) {
         myCoach = theCoach;
     }
 
