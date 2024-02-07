@@ -14,8 +14,18 @@ public class DemoController {
 
     private CoachInterface myCoach;
 
-    @Autowired
+//Constructor Injection Method - included as an example
+ /**
+  * @Autowired
     public DemoController(CoachInterface theCoach) {
+        myCoach = theCoach;
+    }
+ */
+
+ //Setter Injection Method
+
+    @Autowired
+    public void setMyCoach(CoachInterface theCoach){
         myCoach = theCoach;
     }
 
